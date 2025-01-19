@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo Noticias</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+ 
+    
+</head>
+
+<body>
+    <nav>
+        <div class="main-nav container flex">
+            <a href="" class="company-logo">
+                <img src="./images/News Mundi.png" alt="logo">
+            </a>
+            <div class="nav-links">
+                <ul class="flex">
+                   <li class="nav-item">
+  <a href="#futbol" class="hover-link" onclick="onNavItemClick('futbol')">Fútbol</a>
+ 
+
+<li class="nav-item">
+  <a href="#espana" class="hover-link" onclick="onNavItemClick('españa')">España</a>
+</li>
+<li class="nav-item">
+  <a href="#tecnologia" class="hover-link" onclick="onNavItemClick('tecnologia')">Tecnología</a>
+</li>
+<li class="nav-item">
+  <a href="#politica" class="hover-link" onclick="onNavItemClick('politica')">Política</a>
+</li>
+                </ul>
+            </div>
+            <div class="search-bar flex">
+                <input type="text" class="news-input" id="search-text" placeholder="e.j. futbol español">
+                <button class="search-button" id="search-button">Buscar</button>
+            </div>
+        </div>
+    </div> 
+    </nav>
+
+
+    <main>
+        <div class="cards-container container flex" id="cardscontainer">
+
+
+
+        </div>
+    </main>
+
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="" id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">This is the Title</h3>
+                <h6 class="news-source" id="news-source">constGenius 02/02/2024</h6>
+                <p class="news-desc" id="news-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem
+                    incidunt ratione, dolore beatae quaerat voluptatum autem fugit voluptas minima eligendi facere
+                    tenetur cumque. Dolorem porro, fugiat distinctio a accusamus cum!</p>
+            </div>
+        </div>
+    </template>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-section">
+                    <h4>Políticas</h4>
+                    <ul class="footer-links">
+                        <li><a href="./legal-pages.html/#privacidad">Política de Privacidad</a></li>
+                        <li><a href="/NewsWebsite-main/legal-pages.html/">Términos y Condiciones</a></li>
+                        <li><a href="/NewsWebsite-main/legal-pages.html/">Política de Cookies</a></li>
+                        <li><a href="/NewsWebsite-main/legal-pages.html/">Aviso Legal</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Etiquetas Populares</h4>
+                    
+                    <div class="tag-section">
+                        <h5>Deportes</h5>
+                        <div class="tags-container">
+                            <a href="#laliga" class="tag" onclick="onNavItemClick('laliga')">LaLiga</a>
+                            <a href="#premier" class="tag" onclick="onNavItemClick('premier')">Premier League</a>
+                            <a href="#champions" class="tag" onclick="onNavItemClick('champions')">Champions League</a>
+                            <a href="#formula1" class="tag" onclick="onNavItemClick('formula1')">Fórmula 1</a>
+                            <a href="#nba" class="tag" onclick="onNavItemClick('nba')">NBA</a>
+                        </div>
+                    </div>
+
+                    <div class="tag-section">
+                        <h5>Actualidad</h5>
+                        <div class="tags-container">
+                            <a href="#politica" class="tag" onclick="onNavItemClick('politica')">Política</a>
+                            <a href="#economia" class="tag" onclick="onNavItemClick('economia')">Economía</a>
+                            <a href="#internacional" class="tag" onclick="onNavItemClick('internacional')">Internacional</a>
+                            <a href="#sociedad" class="tag" onclick="onNavItemClick('sociedad')">Sociedad</a>
+                        </div>
+                    </div>
+
+                    <div class="tag-section">
+                        <h5>Tecnología y Ciencia</h5>
+                        <div class="tags-container">
+                            <a href="#ia" class="tag" onclick="onNavItemClick('ia')">Inteligencia Artificial</a>
+                            <a href="#apps" class="tag" onclick="onNavItemClick('apps')">Apps</a>
+                            <a href="#espacio" class="tag" onclick="onNavItemClick('espacio')">Espacio</a>
+                            <a href="#medio-ambiente" class="tag" onclick="onNavItemClick('medio-ambiente')">Medio Ambiente</a>
+                        </div>
+                    </div>
+
+                    <div class="tag-section">
+                        <h5>Entretenimiento</h5>
+                        <div class="tags-container">
+                            <a href="#cine" class="tag" onclick="onNavItemClick('cine')">Cine</a>
+                            <a href="#musica" class="tag" onclick="onNavItemClick('musica')">Música</a>
+                            <a href="#series" class="tag" onclick="onNavItemClick('series')">Series</a>
+                            <a href="#videojuegos" class="tag" onclick="onNavItemClick('videojuegos')">Videojuegos</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <ul class="footer-links">
+                        <li><a href="#contacto">Contactar</a></li>
+                        <li><a href="#empleo">Trabaja con nosotros</a></li>
+                        <li><a href="#publicidad">Publicidad</a></li>
+                        <li><a href="#rss">RSS</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Todo Noticias. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
